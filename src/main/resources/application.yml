@@ -1,0 +1,24 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://evansmogeni254:%23Evansmark2020@cluster0.tbtly.mongodb.net/taskido-spring
+  application:
+    name: todo-api
+server:
+  port: 8080
+
+jwt:
+  secret: mySecretKey123456789012345678901234567890
+  expiration: 86400000 # 24 hours
+
+# Swagger/OpenAPI Configuration
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    operationsSorter: method
+    tagsSorter: alpha
+    tryItOutEnabled: true
+    filter: true
+  show-actuator: false
